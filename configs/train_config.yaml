@@ -1,0 +1,57 @@
+# Training configuration for thermal super-resolution
+
+# Data settings
+data_dir: "ssl4eo_l_oli_tirs_toa_benchmark/ssl4eo_l_oli_tirs_toa_benchmark"
+batch_size: 16
+patch_size: 192
+scale_factor: 2
+num_workers: 4
+
+# Model settings
+model_type: "ThermalSRWithGAN"
+
+# Training settings
+num_epochs: 300
+initial_epochs: 100      # Phase 1: Basic reconstruction
+refinement_epochs: 100   # Phase 2: Add perceptual losses
+adversarial_epochs: 100  # Phase 3: Full GAN training
+
+# Learning rates
+lr_generator: 0.0002
+lr_discriminator: 0.0001
+lr_min: 0.00001
+weight_decay: 0.0001
+
+# Loss weights
+lambda_pixel: 1.0
+lambda_perceptual: 0.1
+lambda_physics: 1.0
+lambda_spectral: 0.5
+lambda_edge: 0.1
+lambda_adversarial: 0.01
+
+# GAN settings
+gan_loss_type: "lsgan"  # Options: "lsgan", "vanilla"
+
+# Training options
+use_amp: true  # Automatic mixed precision
+gradient_clip: 1.0
+
+# Logging and checkpointing
+log_dir: "logs/thermal_sr"
+checkpoint_dir: "checkpoints/thermal_sr"
+log_interval: 50
+vis_interval: 200
+save_interval: 10
+
+# Resume training
+resume: false
+resume_path: null
+
+# Random seed
+seed: 42
+
+# Validation settings
+val_interval: 1
+val_ratio: 0.1
+test_ratio: 0.1

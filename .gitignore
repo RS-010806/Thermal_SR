@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.build/
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Dataset (DO NOT COMMIT - very large)
+ssl4eo_l_oli_tirs_toa_benchmark/
+
+# Training outputs
+logs/
+runs/
+checkpoints/
+results/
+outputs/
+
+# Model weights (too large for git)
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Cache
+.cache/
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*~
