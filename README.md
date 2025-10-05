@@ -135,27 +135,6 @@ Output
 - **Spectral Consistency**: Band ratio preservation
 - **Physics Consistency**: Sensor model compliance
 
-## Results
-
-| Metric | Bicubic | EDSR | SwinFuSR | Ours |
-|--------|---------|------|----------|------|
-| PSNR (dB) | 28.3 | 31.2 | 32.5 | **33.8** |
-| SSIM | 0.812 | 0.871 | 0.889 | **0.914** |
-| RMSE (K) | 2.81 | 1.95 | 1.72 | **1.43** |
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@inproceedings{thermal_sr_2026,
-  title={Physics-Informed Optical-Guided Super-Resolution for Thermal Infrared Imagery},
-  author={Your Name},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2026}
-}
-```
-
 ## References
 
 Key papers this work builds upon:
@@ -163,11 +142,7 @@ Key papers this work builds upon:
 - SwinFuSR: Swin Transformer for Multi-Modal Super-Resolution, CVPRW 2024
 - Physics-Informed Neural Networks, Raissi et al., JCP 2019
 - Cross-spectral registration of thermal and optical aerial imagery, CVPRW 2021
-
-## License
-
-This project is licensed under the MIT License - see LICENSE file for details.
-
+- Thermal Image Processing via Physics-Inspired Deep Networks, ICCVW 2021
 ## Acknowledgments
 
 - ISRO for the problem statement and evaluation framework
