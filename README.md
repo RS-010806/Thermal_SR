@@ -9,7 +9,10 @@ A state-of-the-art deep learning solution for super-resolving Landsat-8 thermal 
 2. **Physics-Informed Processing** - Incorporates sensor modeling, atmospheric correction, and radiative transfer physics
 3. **Multi-Scale Swin Transformer Backbone** - Efficient attention mechanism for capturing long-range dependencies
 4. **Weather-Aware Adaptive Fusion** - Dynamically adjusts optical guidance based on atmospheric conditions
-5. **Emissivity-Gated Cross-Modal Attention** - Prevents texture leakage in thermally homogeneous regions
+5. **Thermal Encoder with PDE & Physics-Guided Loss** - Maintains real temperature gradients with LST & emissivity.
+6. **Dual Encoder Architecture (Optical + Thermal)** - Learns cross-domain spatial and thermal features for enhanced detail recovery using RCAB and RSTB blocks.
+7. **Contrastive Regularization + Multi-Scale Decoder** - Recovers fine-scale thermal patterns under any condition.
+8. **Emissivity-Gated Cross-Modal Attention** - Prevents texture leakage in thermally homogeneous regions
 
 ### Physics Components
 - **Thermal PSF Modeling** - Simulates TIRS sensor response including optical blur and detector integration
@@ -17,6 +20,8 @@ A state-of-the-art deep learning solution for super-resolving Landsat-8 thermal 
 - **Land Surface Emissivity Estimation** - NDVI-based emissivity computation with learnable refinement
 - **Sensor Noise Modeling** - Realistic NEΔT-based noise injection during training
 - **Cross-Band Consistency** - Ensures physical plausibility between Band 10 and Band 11
+
+### Architecture Diagram
 
 ## Dataset
 
