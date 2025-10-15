@@ -141,6 +141,9 @@ Output
 - **Spectral Consistency**: Band ratio preservation
 - **Physics Consistency**: Sensor model compliance
 
+## Super-Resolved Output
+<img width="1065" height="342" alt="image" src="https://github.com/user-attachments/assets/4fe62d76-cad1-4516-82b7-aff0b90f7093" />
+
 ## References
 
 Key papers this work builds upon:
