@@ -22,6 +22,7 @@ A state-of-the-art deep learning solution for super-resolving Landsat-8 thermal 
 - **Cross-Band Consistency** - Ensures physical plausibility between Band 10 and Band 11
 
 ### Architecture Diagram
+<img width="1510" height="730" alt="image" src="https://github.com/user-attachments/assets/ca1c5992-2182-4d87-9ecc-ca900e893334" />
 
 ## Dataset
 
